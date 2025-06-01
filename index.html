@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portfolio - Itan87</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Menú de navegación -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">
+          <img src="img/logo.png" alt="Logo" class="logo-icon">
+      </div>
+      <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tecnologias.html">Tecnologías</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <header>
+    <h1>¡Hola! Soy Naty 🌟</h1>
+    <p>Desarrolladora Front-End en formación. Bienvenid@ a mi portfolio.</p>
+  </header>
+
+  <main>
+    <section id="presentacion">
+      <img src="img/img-representativa.jpg" alt="Una imagen representativa mía" class="imagen-perfil">
+    </section>
+
+    <section id="sobremi">
+      <h2>Sobre mí</h2>
+      <p>Hola, soy Naty (Itan87), desarrolladora en formación con base en Front-End y conocimientos de Back-End y desarrollo mobile. También tengo formación y experiencia como antropóloga e investigadora, lo que me permite trabajar con foco humano y empático en la tecnología. Me apasiona crear soluciones creativas que impacten positivamente, y estoy en constante evolución profesional y personal.</p>
+    </section>
+
+    <section id="tabla-conocimientos">
+      <h2>Conocimientos y Gustos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tecnologías que conozco</th>
+            <th>Tecnologías que quiero aprender</th>
+            <th>Mis hobbies</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML, CSS</td>
+            <td>JavaScript, React</td>
+            <td>Programar, leer, meditar, entrenar, tocar el bajo eléctrico</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="quehago">
+      <h2>¿Qué hago?</h2>
+      <div class="servicios">
+        <div class="bloque">
+          <h3>Maquetación HTML/CSS</h3>
+          <p>Armo sitios estáticos, ordenados, accesibles y responsivos.</p>
+        </div>
+        <div class="bloque">
+          <h3>Diseño con Figma</h3>
+          <p>Interpreto wireframes y los convierto en código.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Itan87 - Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
+
+</body>
+</html>

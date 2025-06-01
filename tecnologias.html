@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecnologías Aplicadas - Itan87</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Menú de navegación -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">
+          <img src="img/logo.png" alt="Logo" class="logo-icon">
+      </div>
+      <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tecnologias.html">Tecnologías</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Sección de tecnologías -->
+  <main>
+    <section id="tecnologias">
+      <h2>Tecnologías aplicadas a diversos desarrollos</h2>
+
+      <div class="tecnologia-contenedor">
+        <div class="bloque">
+          <h3>💻 Front-End</h3>
+          <p>HTML5, CSS3, Flexbox, Responsive Design, Js</p>
+          <p>Diseño interfaces limpias y funcionales usando HTML5, CSS3 y JavaScript. Me enfoco en crear sitios responsive con Flexbox y media queries, que se adapten a cualquier dispositivo. Aplico buenas prácticas de accesibilidad y estructura semántica.</p>
+          <img src="img/frontend.png" alt="Frontend" class="imagen-tec">
+          <p><a href="https://github.com/Itan87X" target="_blank">Ver proyectos Front-End</a></p>
+        </div>
+
+        <div class="bloque">
+          <h3>⚙️ Back-End</h3>
+          <p>Java, Node, Django,  MySQL, Servlets, JDBC</p>
+          <p>Aprendí Back-End con Java, JDBC y MySQL. Implementé conexiones a bases de datos, manejo de formularios y operaciones CRUD desde el servidor usando Servlets. Me interesa seguir profundizando en arquitectura y seguridad. Tengo conocmientos de node y react. </p>
+          <img src="img/java.png" alt="Backend" class="imagen-tec">
+          <p><a href="https://github.com/Itan87X" target="_blank">Ver proyectos Back-End</a></p>
+        </div>
+
+        <div class="bloque">
+          <h3>📱 Mobile</h3>
+          <p>Android</p>
+          <p>Realicé una app móvil sencilla para Android con Android Studio como parte de mi formación. Aprendí a trabajar con vistas, eventos y layouts, entre otros. Me interesa seguir explorando Android Studio y experiencia de usuario en móviles.</p>
+          <img src="img/mobile.png" alt="Mobile" class="imagen-tec">
+          <p><a href="https://github.com/Itan87X" target="_blank">Ver proyecto Mobile</a></p>
+        </div>
+
+        <div class="bloque">
+          <h3>💎 Blockchain</h3>
+          <p>Solidity, Smart Contracts, Web3.js (básico)</p>
+          <p>Exploré el desarrollo de smart contracts con Solidity en la red Ethereum. Aprendí los fundamentos de Web3 y la lógica descentralizada en EthKipu. Desarrollé smarts contracts. Me interesa seguir integrando blockchain en proyectos reales y seguros.</p>
+          <img src="img/ethereum.png" alt="Blockchain" class="imagen-tec">
+          <p><a href="https://github.com/Itan87X" target="_blank">Ver proyecto Blockchain</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Itan87 - Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
+
+</body>
+</html>
