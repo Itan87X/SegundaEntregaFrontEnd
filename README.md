@@ -29,18 +29,31 @@ Este proyecto es una continuación revisisada de mi primer portfolio, mejorando 
 
 .
 ├── css/
+
 │   └── style.css
+
 ├── img/
+
 │   ├── img-representativa.jpg
+
 │   ├── logo.png
+
 │   ├── frontend.png
+
 │   ├── java.png
+
 │   ├── mobile.png
+
 │   ├── ethereum.png
+
 │   └── screenshot-web.png 
+
 ├── index.html
+
 ├── tecnologias.html
+
 ├── contacto.html
+
 └── README.md
 
 
