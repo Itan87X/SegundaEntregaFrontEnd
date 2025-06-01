@@ -1,0 +1,345 @@
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Contenido centrado y con espacio lateral */
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Menú de navegación */
+nav {
+  background-color: #6a5acd;
+  padding: 1rem;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.logo-icon {
+  width: 150px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu li a:hover {
+  text-decoration: underline;
+}
+
+/* Encabezado con fondo y bordes redondeados abajo */
+header {
+  background-color: #6a5acd;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+}
+
+/* Imagen de perfil con efecto hover */
+.imagen-perfil {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 2rem auto;
+  transition: transform 0.3s ease;
+}
+
+.imagen-perfil:hover {
+  transform: scale(1.1);
+}
+
+/* Tabla de conocimientos */
+table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Sección de servicios usando Flexbox */
+.servicios {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tecnologia-contenedor {
+  display: block;
+}
+
+.bloque {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Agrandar el bloque*/
+.bloque:hover {
+ transform: scale(1.05);
+}
+
+.tecnologia-contenedor .bloque {
+  width: 90%;
+  margin: 1rem auto;
+}
+
+/* Formulario estilizado */
+form {
+  width: 60%;
+  margin: auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+form input,
+form button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  width: 50%;
+  margin: 1rem auto 0 auto;
+  background-color: #6a5acd;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: #836fff;
+  transform: scale(1.05);
+}
+
+form button:active {
+  background-color: #483d8b;
+  transform: scale(0.98);
+}
+
+/* Imágenes de tecnologías */
+.imagen-tec {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin: 1rem auto;
+}
+
+/* Enlaces con pseudoclases */
+a {
+  text-decoration: none;
+  color: #6a5acd;
+}
+
+a:hover {
+  color: #483d8b;
+}
+
+a:active {
+  transform: scale(0.95);
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 1080px) {
+  main {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .servicios {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+  .bloque {
+    width: 90%;
+  }
+}
+
+@media (max-width: 375px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  form {
+    width: 90%;
+  }
+}
+
+/* Menú hamburguesa responsivo */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Comportamiento en mobile */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #6a5acd;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Media Queries para responsividad */
+
+/* Tablet vertical y móviles (una columna) */
+@media (max-width: 768px) {
+    /* Aseguramos que los contenedores .servicios se apilen en columnas */
+    .servicios {
+        flex-direction: column; /* Apila los elementos uno debajo del otro */
+        align-items: center; /* Centra los bloques apilados */
+    }
+    
+    /* Aseguramos que los bloques en pantallas pequeñas ocupen un ancho considerable */
+    .bloque {
+        width: 90%; /* Ocupa el 90% del ancho del contenedor padre */
+    }
+}
+    
+
+/* Tablet horizontal */
+@media (max-width: 1080px) {
+    main {
+        padding: 1.5rem;
+    }
+    /* Puedes ajustar aquí también si quieres 1 columna en tablet horizontal */
+    /* Por ahora, si no hay más reglas, seguirá el comportamiento de min-width: 769px si aplica */
+}
+
+/* Tablet vertical y móviles (una columna) */
+@media (max-width: 768px) {
+    .servicios {
+        flex-direction: column; /* Apila los elementos uno debajo del otro */
+        align-items: center; /* Centra los bloques apilados */
+    }
+    /* Aseguramos que los bloques en pantallas pequeñas ocupen un ancho considerable */
+    .bloque {
+        width: 90%; /* Ocupa el 90% del ancho del contenedor padre */
+    }
+}
+
+/* Mobil 1 */
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+    .bloque {
+        width: 90%; /* Mantiene el ancho del 90% */
+    }
+}
+
+/* Mobil 2 */
+@media (max-width: 375px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    form {
+        width: 90%;
+    }
+}
