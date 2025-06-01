@@ -264,7 +264,7 @@ footer {
   font-weight: bold;
 }
 
-/* Comportamiento en mobile */
+/* Comportamiento en móviles */
 @media (max-width: 768px) {
   .menu {
     display: none;
@@ -288,17 +288,15 @@ footer {
 
 /* Media Queries para responsividad */
 
-/* Tablet vertical y móviles (una columna) */
+/* Tablet vertical y móviles a una columna */
 @media (max-width: 768px) {
-    /* Aseguramos que los contenedores .servicios se apilen en columnas */
     .servicios {
-        flex-direction: column; /* Apila los elementos uno debajo del otro */
-        align-items: center; /* Centra los bloques apilados */
+        flex-direction: column; 
+        align-items: center; 
     }
     
-    /* Aseguramos que los bloques en pantallas pequeñas ocupen un ancho considerable */
     .bloque {
-        width: 90%; /* Ocupa el 90% del ancho del contenedor padre */
+        width: 90%; 
     }
 }
     
@@ -308,33 +306,20 @@ footer {
     main {
         padding: 1.5rem;
     }
-    /* Puedes ajustar aquí también si quieres 1 columna en tablet horizontal */
-    /* Por ahora, si no hay más reglas, seguirá el comportamiento de min-width: 769px si aplica */
 }
 
-/* Tablet vertical y móviles (una columna) */
-@media (max-width: 768px) {
-    .servicios {
-        flex-direction: column; /* Apila los elementos uno debajo del otro */
-        align-items: center; /* Centra los bloques apilados */
-    }
-    /* Aseguramos que los bloques en pantallas pequeñas ocupen un ancho considerable */
-    .bloque {
-        width: 90%; /* Ocupa el 90% del ancho del contenedor padre */
-    }
-}
 
-/* Mobil 1 */
+/* Móvil 1 */
 @media (max-width: 480px) {
     body {
         font-size: 16px;
     }
     .bloque {
-        width: 90%; /* Mantiene el ancho del 90% */
+        width: 90%; 
     }
 }
 
-/* Mobil 2 */
+/* Móvil 2 */
 @media (max-width: 375px) {
     header h1 {
         font-size: 1.5rem;
